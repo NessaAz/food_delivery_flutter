@@ -16,6 +16,8 @@ class _MainFoodPageState extends State<MainFoodPage> {
           Container(
 
             child: Container(
+              margin:EdgeInsets.only(top: 45, bottom: 15),
+              padding: EdgeInsets.only(left: 20, right: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -25,12 +27,15 @@ class _MainFoodPageState extends State<MainFoodPage> {
                       Text("City")
                     ],
                   ),
-                  Container(
-                    width: 45,
-                    height: 45,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.blue,
+                  Center(
+                    child: Container(
+                      width: 45,
+                      height: 45,
+                      child: Icon(Icons.search, color: Colors.white),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: AppC,
+                      ),
                     ),
                   )
                 ],
